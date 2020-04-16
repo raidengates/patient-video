@@ -44,7 +44,6 @@ npm install gulp -g
 
 </dl>
 
-## ディレクトリルール
 <dl>
 <dt>src</dt>
 <dd>For development</dd>
