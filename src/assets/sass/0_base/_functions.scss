@@ -1,0 +1,57 @@
+@charset "UTF-8";
+//
+//  mixin,extend
+//  using mixin and extend
+//
+
+@function fs($fontSize, $baseFontSize:10){
+	@return #{$fontSize / $baseFontSize}rem;
+
+}
+// font size
+@mixin fs($fontSize, $baseFontSize:10){
+	font-size: #{$fontSize / $baseFontSize}rem;
+}
+
+
+//tracking to rem
+@mixin aletter-spacing($letterspacing) {
+    letter-spacing: $letterspacing/1000;
+}
+// example:
+// @include fs(15);
+// @include fs(20, 13);
+
+
+//@mixin fs($fontSize, $baseFontSize:10){
+//font-size: percentage($fontSize / $baseFontSize);
+//}
+
+
+// clearfix（float）
+%cf {
+	@if $support-ie6 or $support-ie7 {
+		*zoom: 1;
+	}
+	&:after {
+		display: block;
+		clear: both;
+		content: "";
+	}
+}
+// example:
+// @extend %cf;
+
+// clearfix（float）
+@mixin cf{
+	@if $support-ie6 or $support-ie7 {
+		*zoom: 1;
+	}
+	&:after {
+		display: block;
+		clear: both;
+		content: "";
+	}
+}
+// example:
+// @extend cf;

@@ -1,0 +1,103 @@
+/*------------------------------------------------------------
+for develop
+------------------------------------------------------------*/
+#__bs_notify__{
+	opacity: 0.3 !important;
+	font-size: 5px !important;
+	line-height: 100% !important;
+	padding: 0 5px 0 5px !important;
+	-webkit-border-radius: 0 !important;
+	        border-radius: 0 !important;
+}
+
+.c-dev-title1,
+.c-dev-title2,
+.c-dev-title3{
+	line-height: 1;
+	font-size: 1.3rem;
+	padding: 6px 0 6px 15px;
+	margin: 40px 0 20px 0;
+    border-radius: 5px;
+}
+
+.c-dev-title2,
+.c-dev-title3{
+	margin-top: 20px;
+}
+
+
+.c-dev-title1{
+	font-size: 1.6rem;
+	background: #000;
+	color: #FFF;
+}
+
+.c-dev-title2{
+	background: #888;
+	color: #FFF;
+	padding-left: 30px;
+}
+
+.c-dev-title3{
+	background: #DDD;
+	color: #000;
+	padding-left: 35px;
+}
+
+.c-dev-title4{
+	background: #F00;
+	color: #FFF;
+	ul{
+		li{
+			font-size: 12px;
+		}
+	}
+}
+.c-dev-title5{
+	background: #F00;
+	color: #FFF;
+	text-align: center;
+	border-radius: 5px;
+	margin: 20px 0;
+	padding: 5px 0;
+}
+.c-dev-title6{
+	background: #DDD;
+    color: #2b0f0f;
+    padding: 5px 8px;
+    margin: 0px 5px;
+}
+.c-dev-message1{
+	top: 0;
+	left: 0;
+	background: #F00;
+	color: #FFF;
+	z-index: 9999;
+	position: fixed;
+	line-height: 1;
+	padding: 3px 6px;
+	opacity: 0.6;
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+	min-height: 50px;
+}
+.c-center{
+	float: none;
+    margin: 0 auto;
+}
+.c-baoloi{
+	border: 1px solid;
+    padding: 20px;
+    margin: 20px 0px;
+    text-align: center;
+    color: red;
+	font-size: 14px;
+	ul{
+		li{
+			&::before{
+				content: "* ";
+			}
+		}
+	}
+}

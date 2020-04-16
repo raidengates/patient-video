@@ -1,0 +1,208 @@
+.bg-login {
+    background: $bg-login;
+    background-size: cover;
+    background-position: 42.27%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    &::after {
+        content: "";
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background-color: #000e21;
+        opacity: 60%;
+    }
+}
+
+.login-box {
+    text-align: center;
+    padding-top: 117px;
+
+    @media screen and (max-width: $breakpoint_PC) and (min-width: $breakpoint_Tablet) {
+        
+    }
+
+    @media screen and (max-width: calc(#{$breakpoint_Tablet} - 1px )) {
+        width: 100%;
+        &--absolute {
+            padding-top: 0;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    @media screen and (max-height: $breakpoint_height){
+        width: 100%;
+        &--absolute {
+            padding-top: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+}
+
+.bs-notify-login {
+    color: #fff;
+    @media screen and (min-width: $breakpoint_PC  ){
+        font-size: 24px;
+        line-height: 30px;
+        padding-bottom: 24px;
+    }
+    @media screen and (max-width: $breakpoint_PC) and (min-width: $breakpoint_Tablet) {
+        font-size: fs(24);
+        line-height: fs(30);
+        padding-bottom: 24px;
+    }
+    @media screen and (max-width: calc(#{$breakpoint_Tablet} - 1px )) {
+        padding-bottom: 10px;
+        font-size: fs(18);
+        line-height: fs(24);
+        max-width: 200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+  
+}
+.box-input-login {
+    padding-bottom: 50px;
+    height: 80px;
+    width: 384px;
+    margin: 0 auto;
+    .p-code-box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        input {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+    @media screen and (max-width: $breakpoint_PC) and (min-width: $breakpoint_Tablet) {
+        margin: 0 auto;
+        .p-code-box {
+            input {
+                font-weight: 500;
+                font-size: fs(40);
+                line-height: fs(50);
+
+            }
+        }
+    }
+    @media screen and (max-width: calc(#{$breakpoint_Tablet} - 1px )) {
+        height: 40px;
+        width: 200px;
+        margin: 0 auto;
+        .p-code-box {
+            input {
+                color: $text-color;
+                font-weight: 500;
+                text-rendering: optimizeLegibility;
+                font-size: fs(20);
+                line-height: fs(25);
+            }
+        }
+    }
+}
+
+.p-login {
+    position: relative;
+}
+
+.box-btn {
+    width: 184px;
+    height: 54px;
+    margin: 0 auto;
+    .qa-btn {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    @media screen and (max-width: calc(#{$breakpoint_Tablet} - 1px )) {
+        width: 142px;
+        height: 38px;
+        .qa-btn {
+            font-size: fs(18);
+            line-height: fs(22);
+        }
+    }
+    @media screen and (max-width: $breakpoint_PC) and (min-width: $breakpoint_Tablet ){
+        .qa-btn {
+            font-size: fs(24);
+            line-height: fs(30);
+        }
+    }
+}
+
+.p-congratulation
+{
+    color: #fff;
+    width: 100%;
+    min-height: 30px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 48px;
+    .s-item{
+        padding-bottom: 8px;
+    }
+    @media screen and (max-height: $breakpoint_height){
+        margin-bottom: 10px;
+    }
+    .isUser{
+        font-size: 16px;
+        @media screen and (max-width: calc(#{$breakpoint_Tablet} - 1px )) {
+            font-size: fs(12);
+            line-height: fs(15);
+        }
+        @media screen and (max-width: $breakpoint_PC) and (min-width: $breakpoint_Tablet ){
+            font-size: fs(16);
+            line-height: fs(15);
+        }
+    }
+    .ResetCode{
+        font-size: 24px;
+        line-height: 30px;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        width:  fit-content;
+        margin: 0 auto;
+        &::after{
+            content: "";
+            border-bottom: 1px solid;
+            display: block;
+            width: 100%;
+        }
+
+        @media screen and (max-width: calc(#{$breakpoint_Tablet} - 1px )) {
+            font-size: fs(18);
+            line-height: fs(22);
+        }
+        
+        @media screen and (max-width: $breakpoint_PC) and (min-width: $breakpoint_Tablet ){
+            font-size: fs(24);
+            line-height: fs(30);
+        }
+        
+    }
+}

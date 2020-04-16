@@ -1,0 +1,103 @@
+@charset "UTF-8";
+//css for Layout
+// Can use id, If you use class Please adding prefix .l-
+/*------------------------------------------------------------
+	Layout
+------------------------------------------------------------*/
+body {
+	line-height: 1.5;
+	margin: 0;
+	// &:before {
+	// 	content: "";
+	// 	display: block;
+	// 	height: 7px;
+	// 	background: #4e4e4e;
+	// 	width: 100%;
+	// }
+}
+#container {
+	margin: 0 auto;
+	background-color: #fff;
+	text-align: left;
+	max-width: 1200px;
+}
+
+.l-main {
+	// margin-bottom: 10px;
+	// font-size: 1.4rem;
+	// @include cf;
+	// @extend %cf;
+	max-width: 1200px;
+}
+
+/*------------------------------------------------------------
+	Navi
+------------------------------------------------------------*/
+#gNavi {
+	margin-bottom: 10px;
+	li {
+		width: 160px;
+		background-color: #efefef;
+		float: left;
+		a {
+			padding: 10px 0;
+			display: block;
+			text-decoration: none;
+			text-align: center;
+		}
+	}
+}
+/*------------------------------------------------------------
+	Breadcrumbs
+------------------------------------------------------------*/
+#pagePath {
+	margin-bottom: 10px;
+	li {
+		margin-right: 2px;
+		display: inline;
+		a {
+			margin-right: 5px;
+		}
+	}
+}
+
+/*------------------------------------------------------------
+	contentc
+------------------------------------------------------------*/
+#conts {
+	width: 580px;
+	float: left;
+}
+
+/*------------------------------------------------------------
+	side
+------------------------------------------------------------*/
+
+#sideBar {
+	padding: 50px 0;
+	width: 200px;
+	background-color: #efefef;
+	float: right;
+}
+/*------------------------------------------------------------
+	footer
+------------------------------------------------------------*/
+
+#footer {
+	//padding: 10px 10px 5px;
+	height: 125px;
+	// background-color: #f2f2f2;
+}
+@media screen and (max-width: 768px) {
+	body {
+		width: 100%;
+		min-width: 100%;
+		text-align: unset;
+	}
+	#container {
+		width: 100%;
+	}
+	#header {
+	
+	}
+}

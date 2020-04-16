@@ -1,0 +1,45 @@
+$i-search: url('../img/icons/i-search.svg');
+$i-logout: url('../img/icons/i-logout.svg');
+$bg-login: url('../img/bg/bg-login.jpg');
+
+.icon{
+    &--search{
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        overflow: hidden;
+        &::after{
+            content:'';
+            background: $i-search center no-repeat;
+            position: absolute;
+            min-width: 50px;
+            max-width: $box-size;
+            height: calc(100% - 4px);
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            border: 2px solid #fff;
+            border-radius: 0 2px 2px 0;
+            background-color: #D7E7FF;
+            //background-color: red;
+        }
+    }
+    &--logout{
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        &::after{
+            content:'';
+            background: $i-logout center no-repeat;
+            position: absolute;
+            width: $box-size;
+            height: calc(100% - 4px);
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            border-radius: 0 2px 2px 0;
+        }
+    }
+}
+

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*------------------------------------------------------------
+	Default
+------------------------------------------------------------*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,button,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+
+	// font-size: 1em;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/*------------------------------------------------------------
+	font-face
+------------------------------------------------------------*/
+@font-face {
+    font-family: "Quicksand";
+	src: url("../lib/fonts/Quicksand-Medium.ttf");
+}
+@font-face {
+	font-family: "Quicksand";
+    src: url("../lib/fonts/Quicksand-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url("../lib/fonts/Quicksand-Light.ttf");
+	font-weight: lighter;
+    // font-style: italic, oblique;
+}
+
+body, table,
+input, textarea, select, option,button,
+h1, h2, h3, h4, h5, h6 {
+	// font-family: Osaka,  游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	font-family: Quicksand, sans-serif;
+	line-height: 1.1;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+table,
+input, textarea, select, option {
+	line-height: 1.1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+img {
+	vertical-align: top;
+}

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+// HTML5
+$use-html5: true;
+$support-ie6: false;
+$support-ie7: false;
+$support-ie8: false;
+$support-ie9: false;
+$support-mozilla: true;
+$support-webkit : true;
+$support-opera  : false;
+$set_prefix: -webkit-, -moz-, -ms-, '';
+//color
+$header-color:#28579A;
+$text-color:#00364A;
+$border-color: #00aeef;
+
+
+$box-size: 40px;
+
+$breakpoint_max: 1200px;
+$breakpoint_min: 320px;
+
+$breakpoint_PC: 1024px;
+$breakpoint_Tablet: 768px;
+
+
+$breakpoint_height: 500px;
+
+
+
+
+//font-site
+$medium: 18px;
+
+
